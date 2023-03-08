@@ -1,0 +1,17 @@
+{
+  "name": "@omaxel/angular-ms-app-insights",
+  "version": "1.0.2",
+  "author": "Omar Muscatello",
+  "repository": "github:omaxel/angular-ms-app-insights",
+  "peerDependencies": {
+    "@angular/core": ">=13",
+    "@angular/common": ">=13",
+    "@angular/router": ">=13",
+    "@microsoft/applicationinsights-angularplugin-js": "^3.0.0",
+    "@microsoft/applicationinsights-web": "^2.8.10"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}

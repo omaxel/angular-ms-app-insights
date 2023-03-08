@@ -1,0 +1,36 @@
+{
+  "name": "ms-app-insights",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/ms-app-insights/src",
+  "prefix": "omx",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/ms-app-insights/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/ms-app-insights/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/ms-app-insights/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/ms-app-insights/**/*.ts",
+          "libs/ms-app-insights/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
