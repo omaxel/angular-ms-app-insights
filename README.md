@@ -22,7 +22,7 @@ npm i @omaxel/angular-ms-app-insights
 
   ```
   AppInsightsModule.forRoot({
-    connectionString: 'YOUR_CONNECTION_STRING',~~~~
+    connectionString: 'YOUR_CONNECTION_STRING',
     appName: 'YOUR_APP_NAME',
 
     // Optionals
